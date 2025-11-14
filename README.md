@@ -1,28 +1,29 @@
-🚀 Selenium E2E Automation Framework  
+# Selenium E2E Automation Framework  
 Java • Selenium WebDriver • TestNG • Cucumber BDD • Page Object Model
 
 This project is a complete end-to-end UI automation framework for the SauceDemo web application.  
-It validates the entire checkout workflow using industry-standard tools and patterns such as Selenium WebDriver, Cucumber BDD, TestNG, and Page Object Model (POM).
+It validates the entire checkout workflow using Selenium WebDriver, Cucumber BDD, TestNG, and the Page Object Model (POM) design pattern.  
+The framework demonstrates an industry-standard automation architecture suitable for SDET roles and real-world test automation.
 
 ---
 
-⭐ **Overview**  
-This framework automates:
+## Overview  
+This framework automates the complete user journey on the SauceDemo website, including:
 
-- Launching the SauceDemo site  
+- Launching the application  
 - Logging in  
-- Adding products to cart  
+- Adding products to the cart  
 - Proceeding to checkout  
-- Entering user details  
+- Entering customer information  
 - Completing the order  
-- Verifying confirmation message
-- Jenkins Job
+- Verifying the confirmation message  
+- Executing automated Jenkins jobs as part of CI/CD  
 
-It showcases a real-world automation framework design suitable for SDET roles, QA automation interviews, or portfolio projects.
+This project is designed as a robust demonstration of practical automation skills and framework design
 
 ---
 
-🧰 **Tech Stack**
+**Tech Stack**
 - Java 21  
 - Selenium WebDriver 4  
 - Cucumber (BDD)  
@@ -35,7 +36,7 @@ It showcases a real-world automation framework design suitable for SDET roles, Q
 
 ---
 
-📁 **Project Structure**
+**Project Structure**
 ```
 src/
  ├── main/java/seleniumE2EProject
@@ -52,7 +53,7 @@ src/test/resources/feature/
 
 ---
 
-📜 **Example Feature (BDD)**
+**Example Feature (BDD)**
 ```
 Scenario: Complete an end-to-end checkout
   Given the user launches the SauceDemo application
@@ -66,7 +67,7 @@ Scenario: Complete an end-to-end checkout
 ---
 
 
-📊 **Reports**
+**Reports**
 
 **Extent HTML Report**
 ```
@@ -80,11 +81,11 @@ target/cucumber-reports/cucumber-report.html
 
 ---
 
-## 🚀 CI/CD Integration with Jenkins, Headless Mode & GitHub Webhooks
+## CI/CD Integration with Jenkins, Headless Mode & GitHub Webhooks
 
 This project is fully integrated with **Jenkins CI** and automatically runs the tests whenever code is pushed to GitHub.
 
-### 🧪 Headless Chrome Execution  
+### Headless Chrome Execution  
 The Jenkins environment cannot display a UI window, so Chrome runs in **headless mode**:
 
 - Fast execution  
@@ -99,7 +100,7 @@ Headless mode is configured via:
 --disable-dev-shm-usage
 ```
 
-### 🔗 GitHub Webhooks + ngrok (CI Triggering)
+### GitHub Webhooks + ngrok (CI Triggering)
 Because GitHub cannot call `localhost` webhooks, I exposed Jenkins using **ngrok**, which provides a secure public URL.
 
 Steps implemented:
@@ -117,23 +118,22 @@ Steps implemented:
    https://<random>.ngrok-free.app/github-webhook/
    ```
 4. Enabled **Build Trigger → GitHub hook trigger for GITScm polling**
-
-💡 Result:  
+Result:  
 Every push to GitHub automatically triggers Jenkins → Maven → Cucumber execution.
 
-### 🛠 Jenkins Build Command
+### Jenkins Build Command
 Jenkins uses a custom Maven profile to run only the Cucumber test runner:
 
 ```
 clean test -P runCucumber
 ```
 
-🔁 Fully automated CI pipeline:
+Fully automated CI pipeline:
 GitHub Push → Webhook → Jenkins → Headless Selenium → Test Reports
 
 ---
 
-🧩 **Key Framework Highlights**
+**Key Framework Highlights**
 - Uses BDD Gherkin syntax for readability  
 - POM for clean separation of UI interactions  
 - TestNG for running Cucumber scenarios  
@@ -143,23 +143,9 @@ GitHub Push → Webhook → Jenkins → Headless Selenium → Test Reports
 
 ---
 
-🎯 **Why This Project Is Valuable**
-This project demonstrates:
-
-✔ Automated end-to-end test flow  
-✔ Ability to design scalable frameworks  
-✔ Experience with Selenium + BDD + TestNG  
-✔ Real-world reporting and POM implementation  
-✔ Strong understanding of automation architecture  
-
-Perfect for SDET interviews, GitHub portfolio, or freelance automation work.
-
----
-
-🤝 **Contributing**
+**Contributing**
 Feel free to fork this repo and submit improvements.
-
-⭐ **Support**
+**Support**
 If you like this project, giving the repo a star helps a lot!
 
 
