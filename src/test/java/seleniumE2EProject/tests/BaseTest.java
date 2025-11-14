@@ -24,6 +24,10 @@ public class BaseTest {
         options.addArguments("--disable-password-manager-reauthentication");
         options.addArguments("--start-maximized");
         options.addArguments("--incognito");
+        options.addArguments("--headless=new");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-gpu");
 
 
         // Optional: run in incognito so Chrome has no stored credentials
