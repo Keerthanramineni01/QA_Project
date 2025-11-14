@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [E2E Suite]">
+  <listeners>
+    <listener class-name="seleniumE2EProject.tests.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="SauceDemo Checkout Flow(failed)">
+    <classes>
+      <class name="seleniumE2EProject.tests.EndToEndTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyCheckoutFlow"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- seleniumE2EProject.tests.EndToEndTest -->
+    </classes>
+  </test> <!-- SauceDemo Checkout Flow(failed) -->
+</suite> <!-- Failed suite [E2E Suite] -->

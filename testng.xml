@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="E2E Suite">
+<listeners>
+        <listener class-name="seleniumE2EProject.tests.TestListener"/>
+    </listeners>
+    <test name="SauceDemo Checkout Flow">
+        <classes>
+            <class name="seleniumE2EProject.tests.EndToEndTest"/>
+        </classes>
+    </test>
+</suite>
