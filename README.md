@@ -15,7 +15,8 @@ This framework automates:
 - Proceeding to checkout  
 - Entering user details  
 - Completing the order  
-- Verifying confirmation message  
+- Verifying confirmation message
+- Jenkins Job
 
 It showcases a real-world automation framework design suitable for SDET roles, QA automation interviews, or portfolio projects.
 
@@ -29,7 +30,8 @@ It showcases a real-world automation framework design suitable for SDET roles, Q
 - Page Object Model (POM)  
 - WebDriverManager  
 - Extent Reports  
-- Maven  
+- Maven
+- CI/CD Integration
 
 ---
 
@@ -62,8 +64,6 @@ Scenario: Complete an end-to-end checkout
 ```
 
 ---
-<img width="2797" height="1401" alt="Screenshot 2025-11-14 164408" src="https://github.com/user-attachments/assets/7fd7ec2a-c0fc-4134-b826-7bd961c9d772" />
-<img width="2878" height="1368" alt="Screenshot 2025-11-14 145619" src="https://github.com/user-attachments/assets/f07b7110-82c9-4183-ba59-21cf1fe7f656" />
 
 
 📊 **Reports**
@@ -106,7 +106,7 @@ Steps implemented:
 
 1. Ran ngrok  
    ```
-   ngrok http 8080
+   ngrok http 9090
    ```
 2. Copied the generated public URL (example):  
    ```
@@ -161,4 +161,10 @@ Feel free to fork this repo and submit improvements.
 
 ⭐ **Support**
 If you like this project, giving the repo a star helps a lot!
+
+
+<img width="2878" height="1368" alt="Screenshot 2025-11-14 145619" src="https://github.com/user-attachments/assets/f07b7110-82c9-4183-ba59-21cf1fe7f656" />
+
+<img width="2797" height="1401" alt="Screenshot 2025-11-14 164408" src="https://github.com/user-attachments/assets/7fd7ec2a-c0fc-4134-b826-7bd961c9d772" />
+
 
